@@ -1,13 +1,14 @@
 #!/bin/csh
-#PBS -q <queue name>
-#PBS -N <job name>
+#PBS -q hotel
+#PBS -N tf_binding.sh
 #PBS -l nodes=10:ppn=2
 #PBS -l walltime=0:50:00
-#PBS -o <output file>
-#PBS -e <error file>
+#PBS -o output.sh
+#PBS -e error.txt
 #PBS -V
-#PBS -M <email address list>
+#PBS -M audrey793@gmail.com
 #PBS -m abe
-#PBS -A <account>
-cd /oasis/tscc/scratch/<user name>
+#PBS -A audrey793
+cd /oasis/tscc/scratch/ucsd-train29
 mpirun -v -machinefile $PBS_NODEFILE -np 20 <./mpi.out>
+

@@ -11,4 +11,4 @@
 #PBS -A audrey793
 cd /oasis/tscc/scratch/ucsd-train29
 mpirun -v -machinefile $PBS_NODEFILE -np 20 <./mpi.out>
-
+echo "Hello I am a message in standard out (stdout)"

@@ -3,8 +3,8 @@
 #PBS -N tf_binding.sh
 #PBS -l nodes=10:ppn=2
 #PBS -l walltime=0:50:00
-#PBS -o output.sh
-#PBS -e error.txt
+#PBS -o biom262hw1_bringittogether.out
+#PBS -e biom262hw1_bringittogether.err
 #PBS -V
 #PBS -M wsc011@ucsd.edu
 #PBS -m abe

@@ -6,10 +6,10 @@
 #PBS -o output.sh
 #PBS -e error.txt
 #PBS -V
-#PBS -M audrey793@gmail.com
+#PBS -M wsc011@ucsd.edu
 #PBS -m abe
-#PBS -A audrey793
-cd /oasis/tscc/scratch/ucsd-train29
+#PBS -A icesw
+cd /oasis/tscc/scratch/ucsd-train19
 mpirun -v -machinefile $PBS_NODEFILE -np 20 <./mpi.out>
 
 #Wendy Chen did exercise #1-3
